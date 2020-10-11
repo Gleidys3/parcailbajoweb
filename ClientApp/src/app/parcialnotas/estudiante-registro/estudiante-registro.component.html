@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+    <div class="col-md-6 offset-md-3">
+    <h2>Registro de estudiante</h2>
+    <form >
+    <div >
+    <label>Identificacion</label>
+    <input type="text" name="identificacion" [(ngModel)]="estudiante.identificacion" class="form-control" />
+    </div>
+    <div >
+    <label>Nombre</label>
+    <input type="text" name="nombre" [(ngModel)]="estudiante.nombre" class="form-control" />
+    </div>
+    <div >
+        <label>corte1</label>
+        <input type="number" name="corte1" [(ngModel)]="estudiante.corte1" class="form-control" />
+        </div>
+    <div >
+    <label>corte2</label>
+    <input type="number" name="corte2" [(ngModel)]="estudiante.corte2" class="form-control" />
+    </div>
+    <div >
+    <label>corte3</label>
+    <input type="number" name="corte3" [(ngModel)]="estudiante.corte3" class="form-control" />
+    </div>         
+    <div class="text-center">
+    <button class="btn btn-primary mr-1"(click)="add()">Register</button>
+    <button class="btn btn-secondary" type="reset">Cancel</button>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>

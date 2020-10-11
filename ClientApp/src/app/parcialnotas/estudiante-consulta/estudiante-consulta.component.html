@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-6">
+        <label for="totales" id="totalesText">definiva:</label>
+    <input [(ngModel)]="searchText" type="text" class="formcontrol" placeholder="Type to filter">
+    </div>
+    </div>
+    <hr>
+    <table class="table table-striped" *ngIf='personas && personas.length'>
+    <thead>
+    <tr>
+    <th scope="col">#</th>
+    <th scope="col">identificación</th>
+    <th scope="col">Nombre </th>
+    <th scope="col">corte1</th>
+    <th scope="col">corte2</th>
+    <th scope="col">corte3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let estudiante of personas; index as i ">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>{{ estudiante.identificacion }} </td>
+    <td>{{ estudiante.nombre }}</td>
+    <td>{{ estudiante.corte1 }}</td>
+    <td>{{ estudiante.corte2 }}</td>
+    <td>{{ estudiante.corte3 }}</td>
+    </tr>
+    </tbody>
+    </table>
